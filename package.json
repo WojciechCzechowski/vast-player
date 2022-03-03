@@ -41,6 +41,7 @@
   "devDependencies": {
     "brfs": "^1.4.3",
     "browserify": "^13.0.0",
+    "cheerio": "^1.0.0-rc.10",
     "flex-sdk": "^4.0.0-0",
     "grunt": "^0.4.5",
     "grunt-browserify": "^4.0.1",
@@ -65,9 +66,8 @@
   },
   "dependencies": {
     "browserify-versionify": "^1.0.6",
-    "lie": "^3.0.2",
     "sort-by": "^1.1.1",
-    "vastacular": "^0.2.0"
+    "superagent": "^7.1.1"
   },
   "browserify": {
     "transform": [
