@@ -78,6 +78,7 @@ module.exports = function gruntfile(grunt) {
             build: {
                 options: {
                     screwIE8: true,
+                    sourceMap: true,
                     compress:{
                         dead_code     : true,  // discard unreachable code
                         drop_debugger : true,  // discard “debugger” statements
