@@ -77,7 +77,14 @@ module.exports = function gruntfile(grunt) {
         uglify: {
             build: {
                 options: {
-                    screwIE8: true
+                    screwIE8: true,
+                    compress:{
+                        dead_code     : true,  // discard unreachable code
+                        drop_debugger : true,  // discard “debugger” statements
+                        global_defs   : {      // global definitions
+                            "DEBUG": false,      // matters for some libraries
+                        },
+                    },
                 },
                 files: [
                     {
